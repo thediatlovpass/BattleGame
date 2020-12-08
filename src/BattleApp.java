@@ -10,5 +10,12 @@ public class BattleApp {
         team2.add(new Ork("Sugbu",100,100,100));
         team2.add(new Ork("Sugbu2",100,100,100));
         team2.add(new OrkCommander("SuperSugbu",160,140,150));
+
+
+        BattleLogic battleLogic = new BattleLogic();
+        battleLogic.attackSecondTeam(team1,team2);
+
     }
+
+
 }
