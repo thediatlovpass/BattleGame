@@ -4,6 +4,14 @@ public class Team {
     private GameCharacter[] characters = new GameCharacter[3];
     private int currentWarriors;
 
+    public GameCharacter[] getCharacters() {
+        return characters;
+    }
+
+    public void setCharacters(GameCharacter[] characters) {
+        this.characters = characters;
+    }
+
     public Team(String teamName) {
         this.teamName = teamName;
     }
@@ -21,6 +29,6 @@ public class Team {
             characters[currentWarriors] = gameCharacter;
             currentWarriors++;
         } else
-            System.out.println("Osiągnięto maksymalną liczbę pracowników !!!");
+            System.out.println("Osiągnięto maksymalną liczbę wojowników !!!");
     }
 }
