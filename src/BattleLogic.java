@@ -5,14 +5,14 @@ public class BattleLogic {
 
     }
 
-    private void calculateStrengthOfAttack(Team team1, Team team2) {
+    private double calculateStrengthOfAttack(Team team1, Team team2) {
         GameCharacter[] characters = team1.getCharacters();
+        double strengthOfAttack = 0;
         for (int i = 0; i < characters.length; i++) {
-
-
+            strengthOfAttack += characters[i].getStrengthOfAttack();
         }
-        System.out.println(team1.getCharacters().length);
-        System.out.println(team2.getCharacters().length);
+        return strengthOfAttack;
+
     }
 
 }
