@@ -1,11 +1,12 @@
-public class Character {
+public class GameCharacter {
 
     private String name;
     private double strengthOfAttack;
     private double strengthOfDefence;
     private double energy;
 
-    public Character(String name, double strengthOfAttack, double strengthOfDefence, double energy) {
+
+    public GameCharacter(String name, double strengthOfAttack, double strengthOfDefence, double energy) {
         this.name = name;
         this.strengthOfAttack = strengthOfAttack;
         this.strengthOfDefence = strengthOfDefence;
@@ -42,5 +43,10 @@ public class Character {
 
     public void setEnergy(double energy) {
         this.energy = energy;
+    }
+
+    public void getInfo() {
+        System.out.println("Nazwa: " + name + ", Siła Ataku: " + strengthOfAttack + ", Siła Obrony: " + strengthOfDefence
+                + ", Energia: " + energy);
     }
 }

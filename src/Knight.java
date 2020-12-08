@@ -1,11 +1,18 @@
-public class Knight extends Character{
+public class Knight extends GameCharacter{
 
-    private final double BONUS_ATTACK = 0.2;
-    private final double BONUS_DEFENCE = 0.2;
+    private final double BONUS_ATTACK = 0.3;
+    private final double BONUS_DEFENCE = 0.3;
 
     public Knight(String name, double strengthOfAttack, double strengthOfDefence, double energy) {
         super(name, strengthOfAttack, strengthOfDefence, energy);
-        strengthOfAttack = strengthOfAttack * BONUS_ATTACK;
-        strengthOfDefence = strengthOfDefence + BONUS_DEFENCE;
+        strengthOfAttack += BONUS_ATTACK * strengthOfAttack;
+        strengthOfDefence += BONUS_DEFENCE * strengthOfDefence;
+        super.setStrengthOfAttack(strengthOfAttack);
+        super.setStrengthOfDefence(strengthOfDefence);
+    }
+
+    @Override
+    public void getInfo() {
+        super.getInfo();
     }
 }
