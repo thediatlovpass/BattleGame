@@ -47,7 +47,7 @@ public class BattleLogic {
     }
 
     double compareEnergies(double team1EnergyAfterBattle, double team2EnergyAfterBattle){
-        System.out.println("Energia drużyn po bitwie: Drużyna: " +  );
+
         if(team1EnergyAfterBattle > team2EnergyAfterBattle){
 
         }

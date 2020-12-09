@@ -14,7 +14,11 @@ public class BattleApp {
         team2.add(new OrkCommander("SuperSugbu", 160, 140, 150));
 
         BattleLogic battleLogic = new BattleLogic();
+        System.out.println("Energia drużyn przed bitwą: Drużyna: " + team1.getTeamName()
+                + ", Energia: " + battleLogic. );
         team2EnergyAfterBattle = battleLogic.attackSecondTeam(team1, team2);
         team1EnergyAfterBattle = battleLogic.attackSecondTeam(team2,team1);
+
+
     }
 }
