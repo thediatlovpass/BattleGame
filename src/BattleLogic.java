@@ -46,11 +46,10 @@ public class BattleLogic {
         return energy;
     }
 
-    double compareEnergies(double team1EnergyAfterBattle, double team2EnergyAfterBattle){
-
-        if(team1EnergyAfterBattle > team2EnergyAfterBattle){
-
-        }
-    }
+//    double compareEnergies(double team1EnergyAfterBattle, double team2EnergyAfterBattle){
+//        if(team1EnergyAfterBattle > team2EnergyAfterBattle){
+//
+//        }
+//    }
 }
 

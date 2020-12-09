@@ -15,7 +15,7 @@ public class BattleApp {
 
         BattleLogic battleLogic = new BattleLogic();
         System.out.println("Energia drużyn przed bitwą: Drużyna: " + team1.getTeamName()
-                + ", Energia: " + battleLogic. );
+                + ", Energia: " + battleLogic.energy );
         team2EnergyAfterBattle = battleLogic.attackSecondTeam(team1, team2);
         team1EnergyAfterBattle = battleLogic.attackSecondTeam(team2,team1);
 
