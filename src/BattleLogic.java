@@ -3,19 +3,19 @@ public class BattleLogic {
     GameCharacter[] characters;
     double energy;
 
-    public void attackSecondTeam(Team team1, Team team2) {
+    public double attackSecondTeam(Team team1, Team team2) {
 
         double strengthOfAttack = calculateStrengthOfAttack(team1);
         double strengthOfDefence = calculateStrengthOfDefence(team2);
         energy = calculateEnergy(team2);
-        compareStrengths(strengthOfAttack, strengthOfDefence);
-
+        return compareStrengths(strengthOfAttack, strengthOfDefence);
     }
 
     private double compareStrengths(double strengthOfAttack, double strengthOfDefence) {
-        if (strengthOfAttack > strengthOfDefence) {
+        if(strengthOfAttack >= strengthOfDefence) {
             energy -= (strengthOfAttack - strengthOfDefence);
-        }
+            return energy;
+        } else
             return energy;
     }
 
@@ -44,6 +44,13 @@ public class BattleLogic {
             energy += characters[i].getEnergy();
         }
         return energy;
+    }
+
+    double compareEnergies(double team1EnergyAfterBattle, double team2EnergyAfterBattle){
+        System.out.println("Energia drużyn po bitwie: Drużyna: " +  );
+        if(team1EnergyAfterBattle > team2EnergyAfterBattle){
+
+        }
     }
 }
 
